@@ -1,0 +1,11 @@
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\bin\Debug\35-1_Shadrina_Pricoldes_po_neiro.exe.config
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\bin\Debug\35-1_Shadrina_Pricoldes_po_neiro.exe
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\bin\Debug\35-1_Shadrina_Pricoldes_po_neiro.pdb
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.csproj.AssemblyReference.cache
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.csproj.SuggestedBindingRedirects.cache
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\_35_1_Shadrina_Pricoldes_po_neiro.Pricoldes_form.resources
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\_35_1_Shadrina_Pricoldes_po_neiro.Properties.Resources.resources
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.csproj.GenerateResource.cache
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.csproj.CoreCompileInputs.cache
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.exe
+D:\Фото-видео файлы  оригинал\Учёба ВУЗ\2 курс\Web 2 курс\Githubproject\Neural_network_number_recognition\35-1_Shadrina_Pricoldes_po_neiro\obj\Debug\35-1_Shadrina_Pricoldes_po_neiro.pdb

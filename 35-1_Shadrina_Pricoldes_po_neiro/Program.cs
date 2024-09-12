@@ -16,7 +16,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Pricoldes_form());
         }
     }
 }
