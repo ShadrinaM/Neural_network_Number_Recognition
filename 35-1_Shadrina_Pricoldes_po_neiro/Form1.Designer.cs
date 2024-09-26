@@ -61,7 +61,7 @@
             this.Pricoldes_name.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Pricoldes_name.Name = "Pricoldes_name";
             this.Pricoldes_name.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.Pricoldes_name.Size = new System.Drawing.Size(531, 54);
+            this.Pricoldes_name.Size = new System.Drawing.Size(668, 67);
             this.Pricoldes_name.TabIndex = 0;
             this.Pricoldes_name.Text = "Приколдес по нейронкам";
             this.Pricoldes_name.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -342,9 +342,9 @@
             // 
             // Pricoldes_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 430);
+            this.ClientSize = new System.Drawing.Size(810, 431);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.panel1);
