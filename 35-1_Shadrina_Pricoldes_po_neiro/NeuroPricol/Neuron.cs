@@ -1,4 +1,5 @@
-﻿using static System.Math;
+﻿using System;
+using static System.Math;
 
 
 namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
@@ -49,6 +50,18 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             }
         }
 
-        //Дописать GeepTg и GeepTg_Derivativator, подготовить обучающие данные для нейронки 10 обучающих, 1 тест
+        public double GeepTg(double sum)
+        {
+            return (Math.Exp(sum) - Math.Exp(-sum)) / (Math.Exp(sum) + Math.Exp(-sum));
+        }
+
+        public double GeepTg_Derivativator(double sum)
+        {
+            double tg = (Math.Exp(sum) - Math.Exp(-sum)) / (Math.Exp(sum) + Math.Exp(-sum));
+            return 1 - tg * tg;
+        }
+        //1 кнопочки
+        //2 Дописать GeepTg и GeepTg_Derivativator, подготовить обучающие данные для нейронки 10 обучающих, 1 тест
+        //3 создать классы слоёв
     }
 }

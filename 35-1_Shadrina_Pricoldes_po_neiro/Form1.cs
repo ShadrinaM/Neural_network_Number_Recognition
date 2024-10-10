@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace _35_1_Shadrina_Pricoldes_po_neiro
 {
@@ -115,7 +116,72 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
             }
             richTextBox1.Text = s;
         }
-    }
 
-    
+
+        //метод сохранения тестового примера
+        private void SaveTest_Click(object sender, EventArgs e)
+        {
+            SaveTest_(numericUpDownExample.Value, inputPixels);
+        }
+        private void SaveTest_(decimal value, double[] input)
+        {
+            string pathDir;//путь к exe
+            string nameFileTrain;//имя файла
+            pathDir = AppDomain.CurrentDomain.BaseDirectory;
+            nameFileTrain = pathDir + "Test.csv";
+            string[] tmpStr = new string[1]; // в неё заносим цифру нужную + кодировку цифры нарисованной
+            tmpStr[0] = value.ToString() + "; ";
+            for (int i = 0; i < 15; i++)
+            {
+                tmpStr[0] += input[i].ToString() + "; ";
+            }
+            if (File.Exists(nameFileTrain))
+            {
+                using (StreamWriter writer = File.AppendText(nameFileTrain))
+                {
+                    writer.WriteLine(tmpStr[0]);
+                }
+            }
+            else
+            {
+                using (StreamWriter writer = File.CreateText(nameFileTrain))
+                {
+                    writer.WriteLine(tmpStr[0]);
+                }
+            }
+        }
+        
+        //метод сохранения обучающего примера
+        private void SaveTrain_Click(object sender, EventArgs e)
+        {
+            SaveTrain_(numericUpDownExample.Value, inputPixels);//сделать аналогично для Test
+        }
+        private void SaveTrain_(decimal value, double[] input)
+        {
+            string pathDir;//путь к exe
+            string nameFileTrain;//имя файла
+            pathDir = AppDomain.CurrentDomain.BaseDirectory;
+            nameFileTrain = pathDir + "train.csv";
+            string[] tmpStr = new string[1]; // в неё заносим цифру нужную + кодировку цифры нарисованной
+            tmpStr[0] = value.ToString() + "; ";
+            for (int i = 0; i < 15; i++)
+            {
+                tmpStr[0] += input[i].ToString() + "; ";
+            }
+            if (File.Exists(nameFileTrain))
+            {
+                using (StreamWriter writer = File.AppendText(nameFileTrain))
+                {
+                    writer.WriteLine(tmpStr[0]);
+                }
+            }
+            else
+            {
+                using (StreamWriter writer = File.CreateText(nameFileTrain))
+                {
+                    writer.WriteLine(tmpStr[0]);
+                }
+            }
+        }
+    }
 }
