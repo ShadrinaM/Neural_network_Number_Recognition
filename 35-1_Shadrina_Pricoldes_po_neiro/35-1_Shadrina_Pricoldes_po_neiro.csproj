@@ -52,8 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NeuroPricol\InputLayer.cs" />
+    <Compile Include="NeuroPricol\Layer.cs" />
+    <Compile Include="NeuroPricol\Network .cs" />
     <Compile Include="NeuroPricol\NeuroEnums.cs" />
     <Compile Include="NeuroPricol\Neuron.cs" />
+    <Compile Include="NeuroPricol\OutputLayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
