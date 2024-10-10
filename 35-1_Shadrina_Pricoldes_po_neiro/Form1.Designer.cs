@@ -343,10 +343,10 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button16.Location = new System.Drawing.Point(20, 281);
+            this.button16.Location = new System.Drawing.Point(20, 300);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(190, 60);
+            this.button16.Size = new System.Drawing.Size(190, 58);
             this.button16.TabIndex = 16;
             this.button16.Text = "Покаж что считал!";
             this.button16.UseVisualStyleBackColor = false;
@@ -358,7 +358,7 @@
             this.SaveTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.SaveTest.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SaveTest.Location = new System.Drawing.Point(20, 281);
+            this.SaveTest.Location = new System.Drawing.Point(0, 300);
             this.SaveTest.Name = "SaveTest";
             this.SaveTest.Size = new System.Drawing.Size(190, 60);
             this.SaveTest.TabIndex = 18;
@@ -372,7 +372,7 @@
             this.SaveTrain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.SaveTrain.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SaveTrain.Location = new System.Drawing.Point(20, 215);
+            this.SaveTrain.Location = new System.Drawing.Point(0, 234);
             this.SaveTrain.Name = "SaveTrain";
             this.SaveTrain.Size = new System.Drawing.Size(190, 60);
             this.SaveTrain.TabIndex = 19;
@@ -382,7 +382,7 @@
             // 
             // numericUpDownExample
             // 
-            this.numericUpDownExample.Location = new System.Drawing.Point(20, 86);
+            this.numericUpDownExample.Location = new System.Drawing.Point(0, 86);
             this.numericUpDownExample.Name = "numericUpDownExample";
             this.numericUpDownExample.Size = new System.Drawing.Size(190, 20);
             this.numericUpDownExample.TabIndex = 20;
