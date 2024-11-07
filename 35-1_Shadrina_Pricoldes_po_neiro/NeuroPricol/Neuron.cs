@@ -33,11 +33,12 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             _weights = weights;
         }
 
-        public void Activator(double[] i, double[] w) // нелинейные пеобразования
+        public void Activator(double[] i) // нелинейные пеобразования
         {
-            double sum = w[0];//аффинное преобразование чеез смещение (нулевой вес, порог)
-            for (int m = 0; m < i.Length; m++)
-                sum += i[m] * w[m + 1]; //линейные преобразования
+            double[] inputs = i;
+            double sum = _weights[0]; //аффинное преобразование чеез смещение (нулевой вес, порог)
+            for (int m = 0; m < inputs.Length; m++)
+                sum += inputs[m] * _weights[m + 1]; //линейные преобразования
             switch (_type)
             {
                 case NeuroType.Hidden:
