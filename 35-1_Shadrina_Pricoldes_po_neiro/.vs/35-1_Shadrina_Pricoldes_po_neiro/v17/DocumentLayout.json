@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\\u0424\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0423\u0447\u0451\u0431\u0430\\\u0423\u0447\u0451\u0431\u0430 \u0412\u0423\u0417\\Githubproject\\Neural_network_number_recognition\\35-1_Shadrina_Pricoldes_po_neiro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|D:\\\u0424\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0423\u0447\u0451\u0431\u0430\\\u0423\u0447\u0451\u0431\u0430 \u0412\u0423\u0417\\Githubproject\\Neural_network_number_recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\outputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|d:\\\u0444\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u0447\u0451\u0431\u0430 \u0432\u0443\u0437\\githubproject\\neural_network_number_recognition\\35-1_shadrina_pricoldes_po_neiro\\neuropricol\\outputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\outputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|d:\\\u0444\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0443\u0447\u0451\u0431\u0430\\\u0443\u0447\u0451\u0431\u0430 \u0432\u0443\u0437\\githubproject\\neural_network_number_recognition\\35-1_shadrina_pricoldes_po_neiro\\neuropricol\\network .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|D:\\\u0424\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0423\u0447\u0451\u0431\u0430\\\u0423\u0447\u0451\u0431\u0430 \u0412\u0423\u0417\\Githubproject\\Neural_network_number_recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\network .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\network .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,8 +58,7 @@
               "RelativeToolTip": "NeuroPricol\\Network .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:56:35.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T20:56:35.632Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "NeuroPricol\\InputLayer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:56:10.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T20:56:10.06Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "NeuroPricol\\Layer.cs",
               "ViewState": "AgIAAMIAAAAAAAAAAAAqwMwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:55:59.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T20:55:59.59Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "NeuroPricol\\NeuroEnums.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T11:55:01.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T11:55:01.183Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "NeuroPricol\\Neuron.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAmwCQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T11:38:31.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T11:38:31.464Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwBAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T10:52:46.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T10:52:46.225Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwJoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T10:52:46.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T10:52:46.282Z"
             },
             {
               "$type": "Document",
@@ -161,8 +154,7 @@
               "ToolTip": "D:\\\u0424\u043E\u0442\u043E-\u0432\u0438\u0434\u0435\u043E \u0444\u0430\u0439\u043B\u044B  \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\\\u0423\u0447\u0451\u0431\u0430\\\u0423\u0447\u0451\u0431\u0430 \u0412\u0423\u0417\\Githubproject\\Neural_network_number_recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T10:52:46.66Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-09-13T10:52:46.66Z"
             }
           ]
         }
