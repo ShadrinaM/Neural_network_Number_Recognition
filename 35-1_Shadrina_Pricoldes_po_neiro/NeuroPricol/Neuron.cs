@@ -26,22 +26,23 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         public double Output { get => _output; }
         public double Derivative { get => _derivative; }
 
-        //конструктор
+        // Конструктор
         public Neuron(double[] weights, NeuroType type)
         {
             _type = type;
             _weights = weights;
         }
 
-        public void Activator(double[] i) // нелинейные пеобразования
+        // Метод активации нейрона (нелинейное преобразование водного слоя)
+        public void Activator(double[] i) 
         {
-            double[] inputs = i;
+            double[] inputs = i; // передача вектора входного сигнала в массив входных данных
             double sum = _weights[0]; //аффинное преобразование чеез смещение (нулевой вес, порог)
-            for (int m = 0; m < inputs.Length; m++)
-                sum += inputs[m] * _weights[m + 1]; //линейные преобразования
+            for (int j = 0; j < inputs.Length; j++)
+                sum += inputs[j] * _weights[j + 1]; //линейные преобразования
             switch (_type)
             {
-                case NeuroType.Hidden:
+                case NeuroType.Hidden: // для нейронов скрытого слоя
                     _output = GeepTg(sum);
                     _derivative = GeepTg_Derivativator(sum);
                     break;
