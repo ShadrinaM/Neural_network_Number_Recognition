@@ -19,12 +19,12 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         protected const double learnigrate = 0.005d;// скорость обучения
         protected const double momentum = 0.05d; // момент инерции
         protected double[,] lastdeltaweights; // веса предыдущей итерации
-        protected Neuron[] _neurons; // массив нейронов текущего слоя
+        protected Neuron[] neurons; // массив нейронов текущего слоя
 
         /// <summary>
         /// Гетер и сеттер для _neurons
         /// </summary>
-        public Neuron[] Neurons { get => _neurons; set => _neurons = value; }
+        public Neuron[] Neurons { get => neurons; set => neurons = value; }
 
         /// <summary>
         /// Сеттер устнавливающий входные данные на нейроны слоя и их активация
@@ -237,7 +237,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
     }
 }
 
-// дописать этот код при условиях что:
+// дописать этот код на 21.11.24 при условиях что:
 // ПРАВИЛА УСТАНОВКИ ВЕСОВ
 // средние знаечния всех синопт весов и порогов есть случайные числа
 

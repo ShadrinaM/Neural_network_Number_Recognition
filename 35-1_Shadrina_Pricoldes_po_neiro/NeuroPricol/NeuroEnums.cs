@@ -6,7 +6,7 @@
         Output //нейрон выходного слоя
     }
 
-    enum NeuroWorkMode //режим работы сети
+    enum NeuroworkMode //режим работы сети
     {
         Train,  // режим обучения
         Test, //режим тестирования
