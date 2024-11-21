@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NeuroPricol\HiddenLayer.cs" />
     <Compile Include="NeuroPricol\InputLayer.cs" />
     <Compile Include="NeuroPricol\Layer.cs" />
     <Compile Include="NeuroPricol\Network .cs" />
