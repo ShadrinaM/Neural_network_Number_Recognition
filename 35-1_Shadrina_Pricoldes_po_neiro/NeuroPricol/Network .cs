@@ -7,9 +7,9 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
     class Network
     {
         private InputLayer input_layer = null;
-        private HiddenLayer hidden_layer1 = new HiddenLayer(74, 15, NeuroType.Hidden, nameof(hidden_layer1));
-        private HiddenLayer hidden_layer2 = new HiddenLayer(31, 74, NeuroType.Hidden, nameof(hidden_layer2));
-        private OutputLayer output_layer = new OutputLayer(10, 31, NeuroType.Output, nameof(output_layer));
+        private HiddenLayer hidden_layer1 = new HiddenLayer(74, 15, NeuronType.Hidden, nameof(hidden_layer1));
+        private HiddenLayer hidden_layer2 = new HiddenLayer(31, 74, NeuronType.Hidden, nameof(hidden_layer2));
+        private OutputLayer output_layer = new OutputLayer(10, 31, NeuronType.Output, nameof(output_layer));
 
         private double[] fact = new double[10]; // массив фактического выхода из сети
         private double[] e_error_avr; //среднее значение энергии ошибки

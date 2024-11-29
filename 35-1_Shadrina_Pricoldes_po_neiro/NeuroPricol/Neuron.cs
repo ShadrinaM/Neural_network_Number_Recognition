@@ -8,7 +8,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
     {
         // поля с маленькой буквы, свойства с большой, поля приват, свойства паблик
 
-        private NeuroType _type; // тип нейрона
+        private NeuronType _type; // тип нейрона
         private double[] _weights; // на нулевом порог, дальше синоптические веса
         private double[] _inputs; // входные данные, на 1 элемент меньше чем в весах
         private double _output; // выход
@@ -17,17 +17,12 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         // функция активации геперболический тангенс
 
         public double[] Weights { get => _weights; set => _weights = value; }
-        public double[] Inputs 
-        {
-            get { return _inputs; }
-            set { _inputs = value; }
-        }
-
+        public double[] Inputs { get => _inputs; set => _inputs = value; }
         public double Output { get => _output; }
         public double Derivative { get => _derivative; }
 
         // Конструктор
-        public Neuron(double[] weights, NeuroType type)
+        public Neuron(double[] weights, NeuronType type)
         {
             _type = type;
             _weights = weights;
@@ -42,11 +37,11 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
                 sum += inputs[j] * _weights[j + 1]; //линейные преобразования
             switch (_type)
             {
-                case NeuroType.Hidden: // для нейронов скрытого слоя
+                case NeuronType.Hidden: // для нейронов скрытого слоя
                     _output = GeepTg(sum);
                     _derivative = GeepTg_Derivativator(sum);
                     break;
-                case NeuroType.Output:
+                case NeuronType.Output:
                     _output = Exp(sum);
                     break;
             }

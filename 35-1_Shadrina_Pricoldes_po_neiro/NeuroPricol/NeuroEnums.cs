@@ -1,6 +1,6 @@
 ﻿namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
 {
-    enum NeuroType //тип нейрона
+    enum NeuronType //тип нейрона
     {
         Hidden,  // нейон скрытого слоя
         Output //нейрон выходного слоя

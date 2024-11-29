@@ -2,7 +2,7 @@
 {
     class HiddenLayer : Layer
     {
-        public HiddenLayer( int non, int nopn, NeuroType nt, string type) : base (non, nopn, nt, type) { }
+        public HiddenLayer( int non, int nopn, NeuronType nt, string type) : base (non, nopn, nt, type) { }
         public override void Recognize(Network net, Layer nextLayer)
         {
             double[] hidden_out = new double[numofneurouns];

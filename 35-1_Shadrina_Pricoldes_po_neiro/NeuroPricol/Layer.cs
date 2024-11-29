@@ -47,7 +47,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         /// <param name="nopn">Количество нейронов в предыдущем слое.</param>
         /// <param name="nt">Тип нейронов в текущем слое (скрытый/выходной).</param>
         /// <param name="nm_Layer">Название слоя, которое будет использоваться для сохранения и загрузки данных.</param>
-        protected Layer(int non, int nopn, NeuroType nt, string nm_Layer)
+        protected Layer(int non, int nopn, NeuronType nt, string nm_Layer)
         {
             numofneurouns = non; // количество нейронов текущего слоя
             numofprevneurons = nopn; // количество нейронов предыдущего слоя

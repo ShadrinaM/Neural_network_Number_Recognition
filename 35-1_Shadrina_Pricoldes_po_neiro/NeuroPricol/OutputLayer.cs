@@ -4,7 +4,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
 {
     class OutputLayer : Layer
     {
-        public OutputLayer(int non, int nopn, NeuroType nt, string type) : base(non, nopn, nt, type) { }
+        public OutputLayer(int non, int nopn, NeuronType nt, string type) : base(non, nopn, nt, type) { }
 
         public override void Recognize(Network net, Layer nextLayer)
         {
