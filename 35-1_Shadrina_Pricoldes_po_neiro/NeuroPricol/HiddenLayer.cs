@@ -11,15 +11,11 @@
             nextLayer.Data = hidden_out; // передача выходного сигнала этого слоя на вход следующего слоя
         }
 
-        /// <summary>
-        /// Метод обратного распространения
-        /// </summary>
-        /// <param name=""></param>
-        /// <returns></returns>
+        //обратный проход 
         public override double[] BackwardPass (double[] gr_sums)
         {
             double[] gr_sum = new double[numofprevneurons];
-            for (int j = 0; j < numofprevneurons; j++)
+            for (int j = 0; j < numofprevneurons; j++) // цикл вычисления градиентной суммы
             {
                 double sum = 0;
                 for (int k = 0; k < numofneurouns; k++)

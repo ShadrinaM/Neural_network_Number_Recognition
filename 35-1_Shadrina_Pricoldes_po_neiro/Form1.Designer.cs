@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Pricoldes_name = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,12 +53,17 @@
             this.SaveTrain = new System.Windows.Forms.Button();
             this.numericUpDownExample = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ButtonTest = new System.Windows.Forms.Button();
+            this.ButtonTrain = new System.Windows.Forms.Button();
+            this.ButtonRecognaze = new System.Windows.Forms.Button();
+            this.Probability = new System.Windows.Forms.Label();
+            this.Output = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExample)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +78,7 @@
             this.Pricoldes_name.Margin = new System.Windows.Forms.Padding(2);
             this.Pricoldes_name.Name = "Pricoldes_name";
             this.Pricoldes_name.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Pricoldes_name.Size = new System.Drawing.Size(524, 51);
+            this.Pricoldes_name.Size = new System.Drawing.Size(649, 62);
             this.Pricoldes_name.TabIndex = 0;
             this.Pricoldes_name.Text = "Приколдес по нейронкам";
             this.Pricoldes_name.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -341,12 +348,12 @@
             // 
             this.button16.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button16.Location = new System.Drawing.Point(20, 300);
+            this.button16.Location = new System.Drawing.Point(20, 308);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(190, 58);
+            this.button16.Size = new System.Drawing.Size(190, 50);
             this.button16.TabIndex = 16;
             this.button16.Text = "Покаж что считал!";
             this.button16.UseVisualStyleBackColor = false;
@@ -358,9 +365,9 @@
             this.SaveTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.SaveTest.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SaveTest.Location = new System.Drawing.Point(0, 300);
+            this.SaveTest.Location = new System.Drawing.Point(468, 110);
             this.SaveTest.Name = "SaveTest";
-            this.SaveTest.Size = new System.Drawing.Size(190, 60);
+            this.SaveTest.Size = new System.Drawing.Size(190, 50);
             this.SaveTest.TabIndex = 18;
             this.SaveTest.Text = "SaveTest";
             this.SaveTest.UseVisualStyleBackColor = false;
@@ -372,9 +379,9 @@
             this.SaveTrain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.SaveTrain.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SaveTrain.Location = new System.Drawing.Point(0, 234);
+            this.SaveTrain.Location = new System.Drawing.Point(468, 167);
             this.SaveTrain.Name = "SaveTrain";
-            this.SaveTrain.Size = new System.Drawing.Size(190, 60);
+            this.SaveTrain.Size = new System.Drawing.Size(190, 50);
             this.SaveTrain.TabIndex = 19;
             this.SaveTrain.Text = "SaveTrain";
             this.SaveTrain.UseVisualStyleBackColor = false;
@@ -382,31 +389,106 @@
             // 
             // numericUpDownExample
             // 
-            this.numericUpDownExample.Location = new System.Drawing.Point(0, 86);
+            this.numericUpDownExample.Location = new System.Drawing.Point(468, 71);
             this.numericUpDownExample.Name = "numericUpDownExample";
-            this.numericUpDownExample.Size = new System.Drawing.Size(190, 20);
+            this.numericUpDownExample.Size = new System.Drawing.Size(95, 23);
             this.numericUpDownExample.TabIndex = 20;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Controls.Add(this.numericUpDownExample);
+            this.panel2.Controls.Add(this.SaveTrain);
+            this.panel2.Controls.Add(this.ButtonTest);
+            this.panel2.Controls.Add(this.ButtonTrain);
+            this.panel2.Controls.Add(this.SaveTest);
+            this.panel2.Controls.Add(this.ButtonRecognaze);
+            this.panel2.Controls.Add(this.Probability);
+            this.panel2.Controls.Add(this.Output);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.Pricoldes_name);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(20, 20);
+            this.panel2.Location = new System.Drawing.Point(20, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(703, 458);
+            this.panel2.Size = new System.Drawing.Size(1122, 438);
             this.panel2.TabIndex = 21;
             // 
-            // panel4
+            // chart1
             // 
-            this.panel4.Controls.Add(this.SaveTrain);
-            this.panel4.Controls.Add(this.numericUpDownExample);
-            this.panel4.Controls.Add(this.SaveTest);
-            this.panel4.Location = new System.Drawing.Point(459, 71);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(230, 360);
-            this.panel4.TabIndex = 19;
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            this.chart1.Location = new System.Drawing.Point(684, 92);
+            this.chart1.Name = "chart1";
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(435, 337);
+            this.chart1.TabIndex = 25;
+            this.chart1.Text = "chart1";
+            // 
+            // ButtonTest
+            // 
+            this.ButtonTest.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ButtonTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ButtonTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.ButtonTest.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ButtonTest.Location = new System.Drawing.Point(468, 379);
+            this.ButtonTest.Name = "ButtonTest";
+            this.ButtonTest.Size = new System.Drawing.Size(190, 50);
+            this.ButtonTest.TabIndex = 24;
+            this.ButtonTest.Text = "Тестировать";
+            this.ButtonTest.UseVisualStyleBackColor = false;
+            this.ButtonTest.Click += new System.EventHandler(this.ButtonTest_Click);
+            // 
+            // ButtonTrain
+            // 
+            this.ButtonTrain.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ButtonTrain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ButtonTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.ButtonTrain.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ButtonTrain.Location = new System.Drawing.Point(468, 323);
+            this.ButtonTrain.Name = "ButtonTrain";
+            this.ButtonTrain.Size = new System.Drawing.Size(190, 50);
+            this.ButtonTrain.TabIndex = 23;
+            this.ButtonTrain.Text = "Обучить";
+            this.ButtonTrain.UseVisualStyleBackColor = false;
+            this.ButtonTrain.Click += new System.EventHandler(this.ButtonTrain_Click);
+            // 
+            // ButtonRecognaze
+            // 
+            this.ButtonRecognaze.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ButtonRecognaze.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ButtonRecognaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.ButtonRecognaze.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ButtonRecognaze.Location = new System.Drawing.Point(468, 267);
+            this.ButtonRecognaze.Name = "ButtonRecognaze";
+            this.ButtonRecognaze.Size = new System.Drawing.Size(190, 50);
+            this.ButtonRecognaze.TabIndex = 22;
+            this.ButtonRecognaze.Text = "Распознать";
+            this.ButtonRecognaze.UseVisualStyleBackColor = false;
+            this.ButtonRecognaze.Click += new System.EventHandler(this.ButtonRecognaze_Click);
+            // 
+            // Probability
+            // 
+            this.Probability.AutoSize = true;
+            this.Probability.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Probability.Location = new System.Drawing.Point(716, 56);
+            this.Probability.Name = "Probability";
+            this.Probability.Size = new System.Drawing.Size(198, 32);
+            this.Probability.TabIndex = 21;
+            this.Probability.Text = "Вероятность: ";
+            // 
+            // Output
+            // 
+            this.Output.AutoSize = true;
+            this.Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Output.Location = new System.Drawing.Point(715, 9);
+            this.Output.Name = "Output";
+            this.Output.Size = new System.Drawing.Size(136, 38);
+            this.Output.TabIndex = 20;
+            this.Output.Text = "Вывод: ";
             // 
             // panel3
             // 
@@ -419,9 +501,9 @@
             // 
             // Pricoldes_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 500);
+            this.ClientSize = new System.Drawing.Size(1154, 466);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -432,7 +514,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExample)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -464,7 +546,12 @@
         private System.Windows.Forms.NumericUpDown numericUpDownExample;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label Probability;
+        private System.Windows.Forms.Label Output;
+        private System.Windows.Forms.Button ButtonTest;
+        private System.Windows.Forms.Button ButtonTrain;
+        private System.Windows.Forms.Button ButtonRecognaze;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 

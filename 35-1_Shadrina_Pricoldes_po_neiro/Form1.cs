@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol;
 
 namespace _35_1_Shadrina_Pricoldes_po_neiro
 {
     public partial class Pricoldes_form : Form
     {
         private double[] inputPixels = new double[15] { 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d };
+        private Network network = new Network();
         public Pricoldes_form()
         {
             InitializeComponent();
@@ -182,6 +184,23 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
                     writer.WriteLine(tmpStr[0]);
                 }
             }
+        }
+
+        private void ButtonRecognaze_Click(object sender, EventArgs e)
+        {
+            network.ForwardPass(network, inputPixels);
+            Output.Text = network.Fact.ToList().IndexOf(network.Fact.Max()).ToString();
+            Probability.Text = (100 * network.Fact.Max()).ToString("0.00") + " %";
+        }
+
+        private void ButtonTrain_Click(object sender, EventArgs e)
+        {
+            //дописать с фотки
+        }
+
+        private void ButtonTest_Click(object sender, EventArgs e)
+        {
+            //не дописано вцелом
         }
     }
 }

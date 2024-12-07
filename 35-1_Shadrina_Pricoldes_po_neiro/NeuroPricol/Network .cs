@@ -26,7 +26,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         {
             
             net.input_layer = new InputLayer(NeuroworkMode.Train); //инициализация входного слоя с режимом работы
-            int epoches = 10; // кол-во эпох обучения(кол-во прогонов программы)
+            int epoches = 100; // кол-во эпох обучения(кол-во прогонов программы)
             double tmpSumError = 0;// временная переменная суммы ошибок
             double[] errors;//вектор сигнала ошибки
             double[] temp_gsums1;//вектор градиента 1 скрытого слоя
@@ -42,52 +42,38 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
                     double[] tmpTrain = new double[15];
                     for (int j = 0; j < tmpTrain.Length; j++)
                         tmpTrain[j] = net.input_layer.Trainset[i, j + 1];
-                    //прямой проход ДОПИСАННЫЙ
-                    net.hidden_layer1.Data = tmpTrain; // Передача входных данных на первый скрытый слой
-                    net.hidden_layer1.Recognize(null, net.hidden_layer2); // Расчет выходов первого скрытого слоя
-                    net.hidden_layer2.Recognize(net, net.output_layer); // Расчет выходов второго скрытого слоя
-                    net.output_layer.Recognize(net, null); // Расчет выходов выходного слоя
 
-                    // Расчет ошибки для текущей итерации
-                    double[] expectedOutput = new double[10]; // Ожидаемые значения выходного слоя
-                    for (int x = 0; x < expectedOutput.Length; x++)
-                        expectedOutput[x] = net.input_layer.Trainset[i, x + 16]; // Данные ожидаемых значений
+                    ForwardPass(net, tmpTrain); //прямой проход обучающего образа
 
-                    errors = new double[expectedOutput.Length];
+                    //вычисление ошибки по итерации
+                    tmpSumError = 0;
+                    errors = new double[net.fact.Length];// для каждого обучающего примера значение ошибки
                     for (int x = 0; x < errors.Length; x++)
-                        errors[x] = expectedOutput[x] - net.fact[x]; // Разница между ожидаемым и фактическим выходом
+                    {
+                        if (x == net.input_layer.Trainset[i, 0]) // если номер выбранного нейрона совпадает
+                            errors[x] = 1.0 - net.fact[x];
+                        else
+                            errors[x] = -net.fact[x]; // =0-net.fact[x]
+                        tmpSumError += errors[x] * errors[x] / 2;
+                    }
+                    e_error_avr[k] += tmpSumError / errors.Length; //сумматрное значение энергии ошибки
 
-                    tmpSumError += net.GetMSE(errors); // Добавляем текущую ошибку в общую сумму
-
-                    // Обратный проход и коррекция весов
-                    temp_gsums2 = net.output_layer.BackwardPass(errors); // Градиенты выходного слоя
-                    temp_gsums1 = net.hidden_layer2.BackwardPass(temp_gsums2); // Градиенты второго скрытого слоя
-                    net.hidden_layer1.BackwardPass(temp_gsums1); // Градиенты первого скрытого слоя
+                    //обратный проход и коррекция весов
+                    temp_gsums2 = net.output_layer.BackwardPass(errors);
+                    temp_gsums1 = net.hidden_layer2.BackwardPass(temp_gsums2);
+                    net.hidden_layer1.BackwardPass(temp_gsums1);
                 }
-
-                // Сохранение средней ошибки по текущей эпохе
-                e_error_avr[k] = tmpSumError / net.input_layer.Trainset.GetLength(0);
-                Console.WriteLine($"Эпоха {k + 1}, средняя ошибка: {e_error_avr[k]}");
+                e_error_avr[k] /= net.input_layer.Trainset.GetLength(0);
             }
+            net.input_layer = null; //обнуление входного слоя
 
-            // Сохранение скорректированных весов
-            net.hidden_layer1.WeightInitialize(MemoryMode.SET, nameof(hidden_layer1));
-            net.hidden_layer2.WeightInitialize(MemoryMode.SET, nameof(hidden_layer2));
-            net.output_layer.WeightInitialize(MemoryMode.SET, nameof(output_layer));
-
+            // запись скорректированных весов в память
+            net.hidden_layer1.WeightInitialize(MemoryMode.SET, nameof(hidden_layer1) + "_memory.csv");
+            net.hidden_layer2.WeightInitialize(MemoryMode.SET, nameof(hidden_layer2) + "_memory.csv");
+            net.output_layer.WeightInitialize(MemoryMode.SET, nameof(output_layer) + "_memory.csv");
         }
 
-        double GetMSE(double[] errors)
-        {
-            double sum = 0;
-            for (int i = 0; i < errors.Length; ++i)
-                sum += Math.Pow(errors[i], 2);
-            return 0.5d * sum;
-        }
-
-
-
-        //прямой проход сети (ЭТОГО НЕ БЫЛО ЕЩЁ)
+        //прямой проход сети
         public void ForwardPass(Network net, double[] netInput)
         {
             net.hidden_layer1.Data = netInput;
