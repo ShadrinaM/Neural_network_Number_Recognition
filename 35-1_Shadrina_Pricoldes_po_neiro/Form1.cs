@@ -186,11 +186,14 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
             }
         }
 
+
+        //кнопки обучения теста и распознавания
         private void ButtonRecognaze_Click(object sender, EventArgs e)
         {
             network.ForwardPass(network, inputPixels);
             Output.Text = network.Fact.ToList().IndexOf(network.Fact.Max()).ToString();
-            Probability.Text = (100 * network.Fact.Max()).ToString("0.00") + " %";
+            Probability.Text = (100 * network.Fact.Max()).ToString("0.00") + " %"; //относительная вероятность умноженная на 100 = абсолютная
+            //дописать лейбл выводящий сигналы нейронов выходного слоя  network.Fact , это как плюшка
         }
 
         private void ButtonTrain_Click(object sender, EventArgs e)
@@ -200,7 +203,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
 
         private void ButtonTest_Click(object sender, EventArgs e)
         {
-            //не дописано вцелом
+            //дописаь с фотки
         }
     }
 }

@@ -16,8 +16,9 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         string pathFileWeights; // путь к файлу синаптических весов для нейронов
         protected int numofneurouns; // число нейронов текщего слоя
         protected int numofprevneurons; // число нейронов предыдущего слоя
-        protected const double learnigrate = 0.005d;// скорость обучения
-        protected const double momentum = 0.05d; // момент инерции
+        protected const double learnigrate = 0.100d;// скорость обучения
+        protected const double momentum = 0.01d; // момент инерции //ЧТО СДЕЛАТЬ: =0 =выключается оптимизация по моменту, нужно ПОДОБРАТЬ learnigrate ЧТО БЫ НЕ ТУПИЛО И НЕ ВЗРЫВАЛОСЬ
+        //ПОТОМ ЕСЛИ ГРАФИК СКАЧКАМИ МОЖНО ПРИБАВИТЬ МОМЕНТ
         protected double[,] lastdeltaweights; // веса предыдущей итерации
         protected Neuron[] neurons; // массив нейронов текущего слоя
 

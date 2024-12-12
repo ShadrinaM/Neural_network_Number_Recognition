@@ -26,6 +26,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         {
             
             net.input_layer = new InputLayer(NeuroworkMode.Train); //инициализация входного слоя с режимом работы
+            //ПОДОБРАТЬ КОЛИЧЕСТВО ЭПОХ ЧТОБЫ СЕТЬ ЛУЧШЕ И БЫСТРЕЕ ОБУЧАЛАСБ, 100 МНОГО
             int epoches = 100; // кол-во эпох обучения(кол-во прогонов программы)
             double tmpSumError = 0;// временная переменная суммы ошибок
             double[] errors;//вектор сигнала ошибки
@@ -72,6 +73,49 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             net.hidden_layer2.WeightInitialize(MemoryMode.SET, nameof(hidden_layer2) + "_memory.csv");
             net.output_layer.WeightInitialize(MemoryMode.SET, nameof(output_layer) + "_memory.csv");
         }
+
+        public void Test(Network net)
+        {
+            //ДОПИСАТЬ загруж тестовое множество и не меняем веса
+
+            net.input_layer = new InputLayer(NeuroworkMode.Test); //инициализация входного слоя с режимом работы
+            int epoches = 3; // кол-во эпох обучения(кол-во прогонов программы) 2-3
+            double tmpSumError = 0;// временная переменная суммы ошибок
+            double[] errors;//вектор сигнала ошибки
+            double[] temp_gsums1;//вектор градиента 1 скрытого слоя
+            double[] temp_gsums2;//вектор градиента 2 скрытого слоя
+
+            e_error_avr = new double[epoches];
+            for (int k = 0; k < epoches; k++) //перебор эпох обучения
+            {
+                e_error_avr[k] = 0; // в начале каждой эпохи обучения значение средней энергии ошибки эпохи обнуляется
+                net.input_layer.Shuffling_Array_Rows(net.input_layer.Testset);
+                for (int i = 0; i < net.input_layer.Testset.GetLength(0); i++)
+                {
+                    double[] tmpTrain = new double[15];
+                    for (int j = 0; j < tmpTrain.Length; j++)
+                        tmpTrain[j] = net.input_layer.Testset[i, j + 1];
+
+                    ForwardPass(net, tmpTrain); //прямой проход обучающего образа
+
+                    //вычисление ошибки по итерации
+                    tmpSumError = 0;
+                    errors = new double[net.fact.Length];// для каждого обучающего примера значение ошибки
+                    for (int x = 0; x < errors.Length; x++)
+                    {
+                        if (x == net.input_layer.Testset[i, 0]) // если номер выбранного нейрона совпадает
+                            errors[x] = 1.0 - net.fact[x];
+                        else
+                            errors[x] = -net.fact[x]; // =0-net.fact[x]
+                        tmpSumError += errors[x] * errors[x] / 2;
+                    }
+                    e_error_avr[k] += tmpSumError / errors.Length; //сумматрное значение энергии ошибки
+                }
+                e_error_avr[k] /= net.input_layer.Testset.GetLength(0);
+            }
+            net.input_layer = null; //обнуление входного слоя
+        }
+
 
         //прямой проход сети
         public void ForwardPass(Network net, double[] netInput)
