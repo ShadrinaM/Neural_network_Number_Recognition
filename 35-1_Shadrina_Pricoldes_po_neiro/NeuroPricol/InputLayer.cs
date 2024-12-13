@@ -33,10 +33,25 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
                             trainset[i,j] = double.Parse(tmpStr[j]); //строковое значение числа преобразуется в сам ...
                         }
                     }
+                    if (trainset == null)
+                        throw new InvalidOperationException($"InputLayer трейнсетнул");
                     Shuffling_Array_Rows(trainset); // перетасовка обучающей выборки методом Фишера-Йетса
                     break;
+                //кейсы ниже взяла у Крис
                 case NeuroworkMode.Test:
-                    // ДОПИСАТЬ
+                    tmpArrStr = File.ReadAllLines(path + "Test.csv");
+                    testset = new double[10, 16]; //определение массива обучающей выборки
+                    for (int i = 0; i < tmpArrStr.Length; i++)
+                    {
+                        tmpStr = tmpArrStr[i].Split(';'); // разбиение i-ой строки на массив отдельных символов                  
+                        for (int j = 0; j < 16; j++) // цикл заполнения i-ой строки обучающей выборки
+                        {
+                            testset[i, j] = double.Parse(tmpStr[j]); //строковое значение числа преобразуется в сам ...
+                        }
+                    }
+                    Shuffling_Array_Rows(testset);
+                    break;
+                case NeuroworkMode.Recogn:
                     break;
             }
         }

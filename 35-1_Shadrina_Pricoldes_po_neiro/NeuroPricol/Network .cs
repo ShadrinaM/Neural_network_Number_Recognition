@@ -27,7 +27,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             
             net.input_layer = new InputLayer(NeuroworkMode.Train); //инициализация входного слоя с режимом работы
             //ПОДОБРАТЬ КОЛИЧЕСТВО ЭПОХ ЧТОБЫ СЕТЬ ЛУЧШЕ И БЫСТРЕЕ ОБУЧАЛАСБ, 100 МНОГО
-            int epoches = 100; // кол-во эпох обучения(кол-во прогонов программы)
+            int epoches = 60; // кол-во эпох обучения(кол-во прогонов программы)
             double tmpSumError = 0;// временная переменная суммы ошибок
             double[] errors;//вектор сигнала ошибки
             double[] temp_gsums1;//вектор градиента 1 скрытого слоя
@@ -37,6 +37,8 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             for (int k = 0; k < epoches; k++) //перебор эпох обучения
             {
                 e_error_avr[k] = 0; // в начале каждой эпохи обучения значение средней энергии ошибки эпохи обнуляется
+                if (net.input_layer.Trainset == null)
+                    throw new InvalidOperationException($"Network Train трейнсетнул");
                 net.input_layer.Shuffling_Array_Rows(net.input_layer.Trainset);
                 for (int i = 0; i < net.input_layer.Trainset.GetLength(0); i++)
                 {
@@ -79,7 +81,7 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             //ДОПИСАТЬ загруж тестовое множество и не меняем веса
 
             net.input_layer = new InputLayer(NeuroworkMode.Test); //инициализация входного слоя с режимом работы
-            int epoches = 3; // кол-во эпох обучения(кол-во прогонов программы) 2-3
+            int epoches = 60; // кол-во эпох обучения(кол-во прогонов программы) 2-3
             double tmpSumError = 0;// временная переменная суммы ошибок
             double[] errors;//вектор сигнала ошибки
             double[] temp_gsums1;//вектор градиента 1 скрытого слоя
@@ -89,6 +91,8 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             for (int k = 0; k < epoches; k++) //перебор эпох обучения
             {
                 e_error_avr[k] = 0; // в начале каждой эпохи обучения значение средней энергии ошибки эпохи обнуляется
+                if (net.input_layer.Testset == null)
+                    throw new InvalidOperationException($"Network Test тестсетнул");
                 net.input_layer.Shuffling_Array_Rows(net.input_layer.Testset);
                 for (int i = 0; i < net.input_layer.Testset.GetLength(0); i++)
                 {

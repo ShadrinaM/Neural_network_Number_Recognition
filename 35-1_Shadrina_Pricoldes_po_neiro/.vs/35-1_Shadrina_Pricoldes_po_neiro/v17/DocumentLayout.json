@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|c:\\users\\marina\\documents\\github\\neural_network_number_recognition\\35-1_shadrina_pricoldes_po_neiro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\network .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\network .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\hiddenlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\hiddenlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\inputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\inputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +19,24 @@
       "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\outputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\outputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\inputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\inputlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\hiddenlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\hiddenlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\neuropricol\\neuroenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:neuropricol\\neuroenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|c:\\users\\marina\\documents\\github\\neural_network_number_recognition\\35-1_shadrina_pricoldes_po_neiro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12A9649-F74A-4C2C-99D5-F55DC4581FD7}|35-1_Shadrina_Pricoldes_po_neiro.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,110 +46,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Layer.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Layer.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\Layer.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Layer.cs",
-              "RelativeToolTip": "NeuroPricol\\Layer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:55:59.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Network .cs",
               "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Network .cs",
               "RelativeDocumentMoniker": "NeuroPricol\\Network .cs",
               "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Network .cs",
               "RelativeToolTip": "NeuroPricol\\Network .cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBwAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAA1wGYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T20:56:35.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Neuron.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Neuron.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\Neuron.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Neuron.cs",
-              "RelativeToolTip": "NeuroPricol\\Neuron.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "InputLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\InputLayer.cs",
+              "RelativeDocumentMoniker": "NeuroPricol\\InputLayer.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\InputLayer.cs",
+              "RelativeToolTip": "NeuroPricol\\InputLayer.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T11:38:31.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HiddenLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\HiddenLayer.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\HiddenLayer.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\HiddenLayer.cs",
-              "RelativeToolTip": "NeuroPricol\\HiddenLayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:28:37.677Z",
+              "WhenOpened": "2024-10-10T20:56:10.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Title": "Layer.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Layer.cs",
+              "RelativeDocumentMoniker": "NeuroPricol\\Layer.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Layer.cs",
+              "RelativeToolTip": "NeuroPricol\\Layer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T10:52:46.66Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAkwMMAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T10:52:46.282Z",
+              "WhenOpened": "2024-10-10T20:55:59.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OutputLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\OutputLayer.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\OutputLayer.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\OutputLayer.cs",
-              "RelativeToolTip": "NeuroPricol\\OutputLayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Neuron.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Neuron.cs",
+              "RelativeDocumentMoniker": "NeuroPricol\\Neuron.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\Neuron.cs",
+              "RelativeToolTip": "NeuroPricol\\Neuron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwD8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:56:20.501Z"
+              "WhenOpened": "2024-09-26T11:38:31.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NeuroEnums.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\NeuroEnums.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\NeuroEnums.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\NeuroEnums.cs",
-              "RelativeToolTip": "NeuroPricol\\NeuroEnums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T11:55:01.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -165,15 +114,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InputLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\InputLayer.cs",
-              "RelativeDocumentMoniker": "NeuroPricol\\InputLayer.cs",
-              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\InputLayer.cs",
-              "RelativeToolTip": "NeuroPricol\\InputLayer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAkwNgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:56:10.06Z"
+              "WhenOpened": "2024-09-13T10:52:46.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HiddenLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\HiddenLayer.cs",
+              "RelativeDocumentMoniker": "NeuroPricol\\HiddenLayer.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\HiddenLayer.cs",
+              "RelativeToolTip": "NeuroPricol\\HiddenLayer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwDAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:28:37.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OutputLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\OutputLayer.cs",
+              "RelativeDocumentMoniker": "NeuroPricol\\OutputLayer.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\NeuroPricol\\OutputLayer.cs",
+              "RelativeToolTip": "NeuroPricol\\OutputLayer.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAB8AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T20:56:20.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Marina\\Documents\\GitHub\\Neural_network_Number_Recognition\\35-1_Shadrina_Pricoldes_po_neiro\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T10:52:46.66Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         }

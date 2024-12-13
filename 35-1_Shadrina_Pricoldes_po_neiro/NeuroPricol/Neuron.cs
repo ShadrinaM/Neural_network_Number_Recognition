@@ -31,10 +31,10 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
         // Метод активации нейрона (нелинейное преобразование водного слоя)
         public void Activator(double[] i) 
         {
-            double[] inputs = i; // передача вектора входного сигнала в массив входных данных
+            _inputs = i; // передача вектора входного сигнала в массив входных данных
             double sum = _weights[0]; //аффинное преобразование чеез смещение (нулевой вес, порог)
-            for (int j = 0; j < inputs.Length; j++)
-                sum += inputs[j] * _weights[j + 1]; //линейные преобразования
+            for (int j = 0; j < _inputs.Length; j++)
+                sum += _inputs[j] * _weights[j + 1]; //линейные преобразования
             switch (_type)
             {
                 case NeuronType.Hidden: // для нейронов скрытого слоя
@@ -57,6 +57,21 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
             double tg = (Math.Exp(sum) - Math.Exp(-sum)) / (Math.Exp(sum) + Math.Exp(-sum));
             return 1 - tg * tg;
         }
+
+
+        //public double GeepTg(double sum)
+        //{
+        //    return (Math.Exp(a * sum) - Math.Exp(-a * sum)) / (Math.Exp(a * sum) + Math.Exp(-a * sum));
+        //}
+
+        //public double GeepTg_Derivativator(double sum)
+        //{
+        //    double tg = GeepTg(sum);
+        //    return a * (1 - tg * tg);
+        //}
+
+
+
         //1 кнопочки
         //2 Дописать GeepTg и GeepTg_Derivativator, подготовить обучающие данные для нейронки 10 обучающих, 1 тест
         //3 создать классы слоёв

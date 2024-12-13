@@ -26,18 +26,32 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro.NeuroPricol
                     sum += neurons[k].Weights[j] * errors[k];
                 gr_sum[j] = sum;
             }
-            for ( int i =0; i< numofneurouns; i++)
+            for (int i = 0; i < numofneurouns; i++)
             {
-                for ( int n =0; n< numofprevneurons+1; n++)
+                if (neurons[i] == null)
+                    throw new InvalidOperationException($"Нейрон {i} не инициализирован.");
+
+                if (neurons[i].Inputs == null)
+                    throw new InvalidOperationException($"Inputs для нейрона {i} не инициализированы.");
+
+                for (int n = 0; n < numofprevneurons + 1; n++)
                 {
                     double deltaw;
+
+                    if (lastdeltaweights == null || lastdeltaweights.GetLength(0) <= i || lastdeltaweights.GetLength(1) <= n)
+                        throw new InvalidOperationException("Массив lastdeltaweights не корректно инициализирован.");
+
                     if (n == 0)
+                    {
                         deltaw = momentum * lastdeltaweights[i, 0] + learnigrate * errors[i];
+                    }
                     else
-                        deltaw = momentum * lastdeltaweights[i, n] + learnigrate * neurons[i].Inputs[n - 1] * neurons[i].Derivative * errors[i];
+                    {
+                        deltaw = momentum * lastdeltaweights[i, n] + learnigrate * neurons[i].Inputs[n - 1] * errors[i];
+                    }
 
                     lastdeltaweights[i, n] = deltaw;
-                    neurons[i].Weights[n] += deltaw; 
+                    neurons[i].Weights[n] += deltaw;
                 }
             }
             return gr_sum;

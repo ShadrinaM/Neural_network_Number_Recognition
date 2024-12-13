@@ -198,12 +198,24 @@ namespace _35_1_Shadrina_Pricoldes_po_neiro
 
         private void ButtonTrain_Click(object sender, EventArgs e)
         {
-            //дописать с фотки
+            network.Train(network);
+            for (int i = 0; i < network.E_error_avr.Length; i++)
+            {
+                chart1.Series[0].Points.AddY(network.E_error_avr[i]);
+            }
+            MessageBox.Show("Обучение успешно завершено.", "Информация",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ButtonTest_Click(object sender, EventArgs e)
         {
-            //дописаь с фотки
+            network.Test(network);
+            for (int i=0; i< network.E_error_avr.Length; i++)
+            {
+                chart1.Series[0].Points.AddY(network.E_error_avr[i]);
+            }
+            MessageBox.Show("Тестирование успешно завершено.", "Информация", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
